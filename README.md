@@ -1,70 +1,21 @@
-# Getting Started with Create React App
+# React Redux Covid19 Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Yayınlandı: https://gilded-axolotl-1c1231.netlify.app/
 
-## Available Scripts
+## Açılış ekranı
+![cvd19tracker](https://user-images.githubusercontent.com/36435160/188710801-0deeaf3b-e1bf-480f-aafc-1d85d54c2aad.png)
 
-In the project directory, you can run:
+## infected, recovered, deaths, active, lastUpdate verileri useSelector ile redux tarafından çekilir. useEffect axios ile apiden veri çekilir. Gelen veri dispatch aracılığıyla redux tarafında api reducer ile karşılanır. Ülke değiştiğinde useEffect tekrar render edilir ve yeni ülke bilgileri çağırılır. 4 tane card yapılmıştır. useSelector aracılığıyla gelen verilir burada gösterilir.
+![cvd19tracker1](https://user-images.githubusercontent.com/36435160/188712127-60ba5316-8325-4e35-adc1-e1ea44c3f041.png)
 
-### `npm start`
+## Formik kullanılmıştır. initial value Turkey verilmiştir. Bir ülke seçilip submit tıklandığında setCountry ile country içerisine seçilen ülke kaydedilir.
+![cvd19tracker2](https://user-images.githubusercontent.com/36435160/188712735-e4d0b0f5-443d-488b-956a-aec77ab50e82.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Grafikler için react chart js 2 kullanılmıştır. useSelector ile veriler çekilir. data içerisine veriler yazılır. Her bir veri için renk verilir. div içerisinde grafik sergilenir.
+![cvd19tracker3](https://user-images.githubusercontent.com/36435160/188713186-3755c54a-d1e4-4e82-bf2f-63f3c9cdf724.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## initial state infected, recovered, deaths, active, lastUpdate olarak tanımlanmıştır. Reducer api ile karşılanan veriler her bir state içerisine kaydedilir.
+![cvd19tracker4](https://user-images.githubusercontent.com/36435160/188713364-b28f7189-5609-4e57-af26-e3bfb8a904d2.png)
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Redux store
+![cvd19tracker5](https://user-images.githubusercontent.com/36435160/188713383-89b28ca7-5e95-4c23-ab0b-f8cec9212338.png)
